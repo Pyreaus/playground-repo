@@ -2,7 +2,7 @@ const arr1 = ['f','$','&','%',0,6,5];
 var arr2 = []
 function expressions(){
     arr.forEach(($x)=>{(typeof $x === ('string'||'integer'))&&($x>0) ? arr2.push($x) : `${$x}:invalid`});
-    for (let $n=0;($n>=0)&&($n%2)!=0;$n++){$n==true ? arr2.push($n) : `!:${$n}`}
+    for (let $n=0;($n>=0)&&($n%2)!=0;$n++){$n==true ? arr2.push($n):`!:${$n}`}
 }
 var m = (engine,x) => {
     return {
@@ -15,7 +15,7 @@ var m = (engine,x) => {
             (typeof $e==='string') ? this._engine.type = $e:`${$e}:invalid`||/*wsp*/'';  
         },
         set enginePower($p){
-            (typeof $p===('string' || 'number')) ? this._engine.power =$p:`${$p}:invalid`||/*wsp*/'';
+            (typeof $p===('string'||'number')) ? this._engine.power =$p:`${$p}:invalid`||/*wsp*/'';
         },
         set engineColour($e){
             (typeof $e==='string') ? this._engine.colour =$e:`${$e}:invalid`||/*wsp*/''; 
