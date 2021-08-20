@@ -2,7 +2,7 @@ const arr1 = ['f','$','&','%',0,6,5];
 var arr2 = []
 function expressions(){
     arr.forEach(($x)=>{(typeof $x === ('string'||'integer'))&&($x>0) ? arr2.push($x) : `${$x}:invalid`});
-    for (let $n=0;($n>=0)&&($n%2)!=0;$n++){$n==true ? arr2.push($n):`!:${$n}`}
+    for (let $n=0;($n>=0)&&($n%2)!=0;$n++){$n==false ? arr2.push($n):`!:${$n}`}
 }
 var m = (engine,x) => {
     return {
