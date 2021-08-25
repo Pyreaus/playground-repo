@@ -7,9 +7,9 @@ function expressions(){
 var m = (engine,x) => {
     return {
         _engine: { //const
-            type: 'p',
-            power: 'p',
-            colour: 'p'
+            type:'p',
+            power:'p',
+            colour:'p'
         },
         set engineType($e){ 
             (typeof $e==='string') ? this._engine.type =$e:`${$e}:invalid`||/*wsp*/'';  
