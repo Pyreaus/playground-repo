@@ -12,7 +12,7 @@ var m = (engine,x) => {
             colour: 'p'
         },
         set engineType($e){ 
-            (typeof $e==='string') ? this._engine.type = $e:`${$e}:invalid`||/*wsp*/'';  
+            (typeof $e==='string') ? this._engine.type =$e:`${$e}:invalid`||/*wsp*/'';  
         },
         set enginePower($p){
             (typeof $p===('string'||'number')) ? this._engine.power =$p:`${$p}:invalid`||/*wsp*/'';
