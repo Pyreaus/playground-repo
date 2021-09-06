@@ -25,3 +25,4 @@ var m = (engine,x) => {
 var { type,power,colour } = m.engine;
 var $n=arr2[2].map(p=($)=>{$.length>1?$[1]||[]:`${$}`}); 
 ['f','$','&','%',0,6,5][0]; //returns "'f'"
+const pq = {_x:[],_y:()=>{for ($x=0;$x!==1;$x++){(typeof $x === int) ? `v:${$x}`:`f:${$x}`}},_z:[]};
