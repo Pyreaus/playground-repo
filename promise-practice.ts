@@ -1,4 +1,4 @@
-{                                        //1  contains type error - line#04   (idk why)
+{                                        //1  contains type error - line#04  (idk why)
     let [rejHandler,resHandler] = [
         (reason:string):void =>{console.error(`exception> ${reason}`)},
         (value:string):void =>{console.warn(`success> ${value}`)}];
